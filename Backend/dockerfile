@@ -9,7 +9,7 @@ COPY Backend/requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
-COPY app.py ./
+COPY Backend/app.py ./
 
 # Expose the port your app runs on
 EXPOSE 80
